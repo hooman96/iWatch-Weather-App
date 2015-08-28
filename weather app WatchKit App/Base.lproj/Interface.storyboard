@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="140" alignment="left" text="Weather" textAlignment="center" id="SUU-tv-c7q">
+                            <color key="textColor" red="0.87843143940000001" green="0.90980398650000005" blue="0.53725492949999998" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="font" type="system" weight="thin" pointSize="20"/>
+                        </label>
+                        <imageView width="132" height="90" alignment="left" id="oak-fw-LCj"/>
+                        <button width="1" alignment="left" title="Update" id="6pi-zB-3HN">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.87843143939971924" green="0.90980398654937744" blue="0.5372549295425415" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="17"/>
+                            <connections>
+                                <action selector="weatherUpdate" destination="AgC-eL-Hgc" id="m15-r6-AdN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="weatherImage" destination="oak-fw-LCj" id="IOu-2H-wHl"/>
+                        <outlet property="weatherType" destination="SUU-tv-c7q" id="rqe-9D-Qga"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
